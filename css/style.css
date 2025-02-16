@@ -105,10 +105,10 @@ a {
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {
-      padding: calc(2rem - 30px) 0 2rem 0; } }
+      padding: 1rem 0 1rem 0; } }
   @media (min-width: 992px) {
     .hero {
-      padding: calc(4rem - 30px) 0 4rem 0; } }
+      padding: 1rem 0 1rem 0; } }
   .hero .intro-excerpt {
     position: relative;
     z-index: 4; }
@@ -133,7 +133,8 @@ a {
       right: 0px;
       z-index: 2;
       max-width: 780px;
-      left: -20px; }
+      left: -20px; 
+    }
       @media (min-width: 768px) {
         .hero .hero-img-wrap img {
           right: 0px;
@@ -141,14 +142,16 @@ a {
       @media (min-width: 992px) {
         .hero .hero-img-wrap img {
           left: 0px;
-          top: -80px;
+          /* top: -80px; */
           position: absolute;
-          right: -50px; } }
+          /* right: -50px; */
+         } }
       @media (min-width: 1200px) {
         .hero .hero-img-wrap img {
           left: 0px;
-          top: -80px;
-          right: -100px; } }
+          /* top: -80px; */
+          right: -100px; 
+        } }
     .hero .hero-img-wrap:after {
       content: "";
       position: absolute;
@@ -158,10 +161,15 @@ a {
       background-size: contain;
       background-repeat: no-repeat;
       right: -100px;
-      top: -0px; }
+      /* top: auto;  */
+      margin: 0 auto;
+    }
+      
       @media (min-width: 1200px) {
         .hero .hero-img-wrap:after {
-          top: -40px; } }
+          top: 40px;
+          /* margin: 0 auto; */
+      } }
 
 .btn {
   font-weight: 600;
@@ -274,6 +282,14 @@ a {
     .product-section .product-item:hover:before {
       height: 70%; }
 
+    .product-title {
+      margin-bottom: 1rem;
+    }
+
+    .product-price {
+      margin-bottom: 0.5rem;
+    }
+
 .why-choose-section {
   padding: 7rem 0; }
   .why-choose-section .img-wrap {
@@ -368,7 +384,7 @@ a {
 .custom-list {
   width: 100%; }
   .custom-list li {
-    display: inline-block;
+    /* display: inline-block; */
     width: calc(50% - 20px);
     margin-bottom: 12px;
     line-height: 1.5;
